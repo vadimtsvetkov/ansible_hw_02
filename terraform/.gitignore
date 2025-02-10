@@ -1,4 +1,4 @@
 private.auto.tfvars
 .terraform/
-.terraform.lock.hcl
-terraform.tfstate
+*.tfstate
+*.tfstate.backup
