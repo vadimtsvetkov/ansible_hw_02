@@ -2,4 +2,15 @@
 clickhouse:
   hosts:
     clickhouse-01:
-      ansible_host: <IP_here>
+      ansible_host: 158.160.46.155
+      ansible_connection: ssh
+      ansible_user: tvadim
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
+      
+vector:
+  hosts:
+    clickhouse-02:
+      ansible_host: 158.160.40.203
+      ansible_connection: ssh
+      ansible_user: tvadim
+      ansible_ssh_private_key_file: ~/.ssh/id_rsa
